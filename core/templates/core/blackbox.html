@@ -1,0 +1,159 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="{% static 'core/style.css' %}">
+  </head>
+  <body>
+    <script src="index.js"></script>
+
+    <nav>
+
+	<ul>
+	   <li><a href="blackbox.html">Black Box Investigation</a></li>
+
+	    <li><a href="screenprint.html">Screenprinting Investigation</a></li>
+
+	</ul>
+
+
+
+</nav>
+
+
+<h1>Black box Investigation</h1>
+
+<img src="{% static 'core/sinusasblackbox.jpg' %}" alt="this is a photo of Mr sinusas's original black box." width="390">
+
+<p>The mystery black box is a box that has a funnel in the top and a tube out of the bottom. When you pour water in the top, you can hear water flowing but no water comes out for a while, you often have to input over 1 liter of water until some flows out. The box often outputs more water then was just put in in the last pour. In this investigation the goal was to replicate the behaviors of the mystery black box.</p>
+
+<h2>Claim</h2>
+
+<p>I believe that the mystery black box has 2 syphons in it that store water and release it when they fill up.</p>
+
+<h3>Evidence</h3>
+
+<p>We poured a certain amount of water in the top of the black box, and we then measured how much water came out the bottom. For test 3 we poured in 600ml of water, and 1250ml came out. When we poured different amounts of water in the top, we did the same and measured how much water came out of the bottom. On test 3 of our box we poured in 1000ml of water and 450ml came out. </p>
+
+<table>
+  <tr>
+    <th>Trial #</th>
+    <th>Water Input 1</th>
+    <th>Water Output 1</th>
+    <th>Water Input 2</th>
+    <th>Water Output 2</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>700</td>
+    <td>950</td>
+    <td>1600</td>
+    <td>1350</td>
+
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>900</td>
+    <td>0</td>
+    <td>1350</td>
+    <td>1350</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>600</td>
+    <td>1250</td>
+    <td>1000</td>
+    <td>450</td>
+   </tr>
+   <tr>
+    <td>4</td>
+    <td>1000</td>
+    <td>1070</td>
+    <td>585</td>
+    <td>0</td>
+   </tr>
+   <tr>
+    <td>5</td>
+    <td>500</td>
+    <td>210</td>
+    <td>450</td>
+    <td>975</td>
+   </tr>
+   <tr>
+    <td>6</td>
+    <td>200</td>
+    <td>0</td>
+    <td>950</td>
+    <td>0</td>
+   </tr>
+   <tr>
+    <td>7</td>
+    <td>1000</td>
+    <td>0</td>
+    <td>900</td>
+    <td>900</td>
+</table>
+
+<p>Using the data we collected, we made a hypothesis that there were 2 syphons in the black box. After that we cut a hole in a cardboard box and fastened two buckets to the inside of the box. We used the buckets to make two syphons. Once we finished the entire model, we started to test it and record our results to compare to the original box.</p>
+
+<img src="{% static 'core/emersonwater.JPG' %}" alt="This is a photo of me pouring water in the top of the first black box." width="400">
+<img src="{% static 'core/emersonwater2.jpg' %}" alt="This is a photo of me pouring water into our first prototype of the black box." width="390">
+
+<h4>Reasoning 1</h4>
+
+<p>A model is something that simply shows the function of a structure or design visually.</p>
+
+<h4>Reasoning 2</h4>
+
+<p>My evidence supports my claim because the variability in our models output is similar to the variability in the black box. Often we would pour water in the top of our design, and the amount of water that came out of the bottom was very random and unpredictable. The mystery black box had a similar level of randomness but not the exact same.</p>
+
+<h4>Reasoning 3</h4>
+
+<p>If a claim about a tipping bucket was correct, then the amount of water outputed would always be above a certain number. This is because the bucket would only tip after a certain amount of water was poured. For example, if the bucket flips over after 500ml of water, when you pour in 900ml of water, like in test 2, water would guarantee pour out because its over the threshold.</p>
+
+<h4> 3D modeling, Animation, and Augmented reality</h4>
+
+<p> Intro and background knoledge</p>
+
+<h5> Autodesk MAYA is a 3D modeling program that is used to develope virtual 3d models. Augmented Reality is a way to enhance real life with virtual models, its a combanation of Virtual Reality and real life.</h5>
+
+<p> During this project we used MAYA to create a 3d model of what we thought was in the black box. I first made a hollow box to contain all of the innards, then I created a funnel to put in the top of the box just like the real black box. After that I modeled a bucket which I then put in the box. Once I finished all of the innards of my box, I started to animate a bucket pouring water into the funnel in the top of my box. I then worked on animating the buckets in the black box filling up. Once I was finally done animating my whole black box in MAYA, I moved to Mergeedu.com to turn my black box into Augmented reality. Overall, working with my animation was somewhat frustrating, sometimes the objects would’nt move how I intended them to, but in the end it worked out well.</p>
+
+<video width="400" autoplay muted loop>
+  <source src="{% static 'core/mayaanimation1.mp4' %}" type="video/mp4">
+</video>
+
+<div class="flex-container">
+
+<img src="{% static 'core/frontviewbb.jpg' %}" alt="A front view of my 3d render of our black box" width="400">
+
+<img src="{% static 'core/emersoncomputer.jpg' %}" alt="This is a photo of me using MAYA to model what I think is in the black box, in 3d." width="200">
+</div>
+
+<h4>Personal Reflection</h4>
+
+<p>There are many ways I contributed to our group during the group work section of our project. I played a big role in building the first prototype of our model black box, and I was the main person in fixing issues and leaks with it when we tested it. Once we finished our entire real black box, I started to model my black box in MAYA. I asked for help from my teammates when I didn't understand something, and they did the same with me. </p>
+
+<img src="{% static 'core/emerson2.jpg' %}" alt="This is a photo of me working on our project board." width="200">
+
+
+<p>During this project, I learned a lot about teamwork and how I work in a team. I learned how to work in a team and how to divide work up between multiple people in the group. We worked to put each person to work on their strengths. For example, some of us are good at building and making real models, and some are better at taking photos. I most enjoyed building our box with cardboard in real life, because it's much more hands on and I am good at working with real life objects. I often struggled with the animation in MAYA, because often I didn't understand how to couple objects, and sometimes the objects would move or not move when I wanted them to. Next project I could ask for more help when I need it, and help others when they ask for it.</p>
+
+
+
+
+<a href= "https://objects.mergeedu.com/link/R6WMLY" > This is the link to the 3d model of my black box that can be used in Augmented Reality </a>
+
+
+<img src="" alt="">
+<img src="{% static 'core/2ddrawing.png' %}" alt="A 2d drawing of my theory on whats inside of the black box.">
+
+</body>
+</html>
+
+
